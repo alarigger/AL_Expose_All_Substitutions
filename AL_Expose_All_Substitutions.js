@@ -11,6 +11,8 @@ function AL_Expose_All_Substitutions(){
 
 
 	/*Expose all the substitutions (drawing elements) of the selected Drawings node (columns)
+	/*You Can loop the exposition or ping pong
+
 	*/
 
 
@@ -23,6 +25,17 @@ function AL_Expose_All_Substitutions(){
 
 	var numSelLayers = Timeline.numLayerSel;
 
+	var Number_of_loops = 1
+
+	var Order = "DESC"
+
+	var exposition = 1;
+
+	var limit = 0;
+
+	var total = 0;
+
+	var increment = 0;
 
 	/**************** E X E C U T I O N */
 
@@ -44,8 +57,10 @@ function AL_Expose_All_Substitutions(){
 
 		MessageLog.trace("\n===============Expose_All_Substitutions\n")
 
-			 for ( var i = 0; i < numSelLayers; i++ )
-			{
+			curFrame += 1;
+
+
+			 for ( var i = 0; i < numSelLayers; i++ ){
 
 		 		if ( Timeline.selIsColumn(i)){
 		 			
@@ -53,15 +68,20 @@ function AL_Expose_All_Substitutions(){
 
 					if (column.type(currentColumn) == "DRAWING"){
 
-						var substitution_timing = column.getDrawingTimings(currentColumn);
+					var substitution_timing = column.getDrawingTimings(currentColumn);
 
-						curFrame = 1;
+					var increment = 
 
-						for(var t=0; t<substitution_timing.length+1;t++){
+					var count = (substitution_timing.length+1)*
 
-							column.setEntry(currentColumn,1,curFrame+t,substitution_timing[t]);
+					switch ()
 
-						}
+
+					for(var t=0; t<substitution_timing.length+1;t+increment){
+
+						column.setEntry(currentColumn,1,curFrame+t,substitution_timing[t]);
+
+					}
 
 				}
 
