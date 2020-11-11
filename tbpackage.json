@@ -1,0 +1,27 @@
+{
+ "name": "Alexandre C",
+ "website": "http://www.alarigger.com/",
+ "social": "",
+ "repository": "https://github.com/alarigger/AL_Expose_All_Substitutions/",
+ "extensions": [
+  {
+   "name": "AL_Expose_All_Substitutions",
+   "version": "0.1.0",
+   "compatibility": "Harmony Premium 16",
+   "description": "Expose all the substitutions (drawing elements) of the selected Drawings node (columns) with the option to loop and add padding",
+   "repository": "https://github.com/alarigger/AL_Expose_All_Substitutions/",
+   "isPackage": "true",
+   "files": [
+    "AL_Expose_All_Substitutions"
+   ],
+   "keywords": [
+    "Expose_All",
+    "package"
+   ],
+   "author": "Alexandre Cormier",
+   "license": "MPL-2.0",
+   "website": "http://www.alarigger.com/",
+   "localFiles": ""
+  }
+ ]
+}
