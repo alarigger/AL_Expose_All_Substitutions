@@ -10,10 +10,12 @@
    "compatibility": "Harmony Premium 16",
    "description": "Expose all the substitutions (drawing elements) of the selected Drawings node (columns) with the option to loop and add padding",
    "repository": "https://github.com/alarigger/AL_Expose_All_Substitutions/",
-   "isPackage": "true",
+   "isPackage": false,
    "files": [
-    "AL_Expose_All_Substitutions"
+    "AL_Expose_All_Substitutions.js",
+    "script-icons/AL_Expose_All_Substitutions.png"
    ],
+   "icon": "script-icons/AL_Expose_All_Substitutions.png",
    "keywords": [
     "Expose_All",
     "package"
